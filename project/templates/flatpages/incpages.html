@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Страница - {{flatpage.title }}
+        {% endblock title %}
+    </title>
+</head>
+<body>
+{% block content %}
+{{ flatpage.content }}
+<h2>Доступна только админу!</h2>
+{% endblock content %}
+
+</body>
+</html>
